@@ -15,12 +15,7 @@ services:
   app:
     <<: *default
     build:
-      args:
-        user: random
-        uid: 1000
       context: .
-      dockerfile: Dockerfile
-    image: digitalocean.com/php
     container_name: flarum
     volumes:
       - .:/var/www
