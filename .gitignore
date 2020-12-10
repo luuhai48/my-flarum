@@ -10,3 +10,4 @@ studio.json
 composer.lock
 public/sitemap.xml
 .env
+.vscode
