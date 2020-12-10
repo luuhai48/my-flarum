@@ -50,6 +50,12 @@ services:
     volumes:
       - flarum_db:/var/lib/mysql
 
+  node:
+    build: ./node
+    container_name: node
+    ports:
+      - 8080:8080
+
 volumes:
   flarum_db:
     name: flarum_db_volume
