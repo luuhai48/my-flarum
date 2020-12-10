@@ -3,11 +3,12 @@
     "version": "1.0.0",
     "description": "Node.js server for HEIC image convert",
     "author": "Luuhai48 <luuhai.hn48@gmail.com>",
-    "main": "index.js",
+    "main": "app/index.js",
     "scripts": {
-        "start": "node index.js"
+        "start": "node app/index.js"
     },
     "dependencies": {
-        "express": "^4.17.1"
+        "express": "^4.17.1",
+        "express-fileupload": "^1.2.0"
     }
 }

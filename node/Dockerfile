@@ -4,10 +4,10 @@ WORKDIR /node
 
 COPY package*.json ./
 
-RUN npm install
+RUN npm i && npm i nodemon -g
 
 COPY . .
 
 EXPOSE 8080
 
-CMD ["node", "index.js"]
+CMD ["nodemon", "app/node.js"]
