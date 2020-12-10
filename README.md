@@ -9,5 +9,5 @@
  - Step 6: Run `composer install` for installing composer packages.
 
 ## NOTE:
- - When first start using the website, it will ask you to input database's information. Use information the same as in the `.env` file. The database host must be `db`, **NOT** `localhost`.
+ - When first start using the website, it will ask you to input database's information. Use information the same as in the `.env` file. The database host must be `db` (the name of docker service, located inside `docker-compose.yml` file), **NOT** `localhost`.
  - Remember to disable or remove any webserver engine (like nginx, apache) that's running on port 80, or the nginx container won't work.

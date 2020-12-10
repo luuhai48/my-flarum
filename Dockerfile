@@ -13,7 +13,7 @@ RUN apt-get clean && rm -rf /var/lib/apt/lists/*
 RUN docker-php-ext-configure gd --with-freetype --with-jpeg \
     && docker-php-ext-install gd
 
-RUN docker-php-ext-install mbstring exif pcntl pdo pdo_mysql mysqli
+RUN docker-php-ext-install mbstring exif pcntl pdo pdo_mysql mysqli opcache
 
 COPY --from=composer:latest /usr/bin/composer /usr/bin/composer
 

@@ -20,6 +20,7 @@ services:
     volumes:
       - .:/var/www
       - ./deploy/php/local.ini:/usr/local/etc/php/conf.d/local.ini
+      - ./deploy/php/opcache.ini:/usr/local/etc/php/conf.d/opcache.ini
     depends_on:
       - db
 
