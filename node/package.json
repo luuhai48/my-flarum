@@ -9,6 +9,8 @@
     },
     "dependencies": {
         "express": "^4.17.1",
-        "express-fileupload": "^1.2.0"
+        "express-fileupload": "^1.2.0",
+        "heic-convert": "^1.2.3",
+        "sharp": "0.26.3"
     }
 }
