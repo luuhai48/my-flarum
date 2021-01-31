@@ -59,21 +59,8 @@
         "flarum/subscriptions": "^0.1.0",
         "flarum/suspend": "^0.1.0",
         "flarum/tags": "^0.1.0",
-        "fof/best-answer": "^0.2.0",
-        "fof/drafts": "^0.2.0",
-        "fof/linguist": "^0.4.4",
-        "fof/links": "^0.4.0",
-        "fof/nightmode": "^0.6.0",
-        "fof/oauth": "^0.1.0",
-        "fof/pages": "^0.5.0",
-        "fof/sitemap": "^0.5.4",
-        "fof/upload": "^0.11.0",
-        "fof/user-bio": "^0.3.1",
-        "fof/user-directory": "^0.4.0",
-        "guzzlehttp/guzzle": "^6.0",
-        "luuhai48/flarum-tinker": "^1.1",
-        "luuhai48/oauth-google": "^1.0",
-        "paragonie/random_compat": "v9.99.99"
+        "fof/oauth": "^0.2.0",
+        "luuhai48/oauth-linkedin": "^2.0"
     },
     "config": {
         "preferred-install": "dist",

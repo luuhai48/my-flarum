@@ -1,5 +1,6 @@
 D := $(shell pwd)
-
+default:
+	make up
 
 build:
 	docker-compose build

@@ -16,7 +16,11 @@ services:
     <<: *default
     build:
       context: .
-    container_name: flarum
+      args:
+        user: ${USER}
+        uid: ${UID}
+    container_name: my_flarum_app
+    working_dir: /var/www
     volumes:
       - .:/var/www
       - ./deploy/php/local.ini:/usr/local/etc/php/conf.d/local.ini
@@ -27,7 +31,7 @@ services:
   nginx:
     <<: *default
     image: nginx:stable
-    container_name: nginx
+    container_name: my_flarum_nginx
     ports:
       - 80:80
     volumes:
@@ -41,7 +45,7 @@ services:
   db:
     <<: *default
     image: mariadb
-    container_name: db
+    container_name: my_flarum_db
     environment:
       MYSQL_USER: ${DATABASE_USER}
       MYSQL_PASSWORD: ${DATABASE_PASSWORD}
@@ -50,14 +54,14 @@ services:
     volumes:
       - flarum_db:/var/lib/mysql
 
-  node:
-    build: ./node
-    container_name: node
-    ports:
-      - 8080:8080
-    volumes:
-      - ./node/app:/node/app
+  # node:
+  #   build: ./node
+  #   container_name: my_flarum_node
+  #   ports:
+  #     - 8080:8080
+  #   volumes:
+  #     - ./node/app:/node/app
 
 volumes:
   flarum_db:
-    name: flarum_db_volume
+    name: my_flarum_db_volume
